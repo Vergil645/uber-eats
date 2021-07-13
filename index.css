@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 16px rgba(38, 38, 38, 0.16);
+
+    width: 100%;
+    height: 72px;
+
+    display: flex;
+    align-items: center;
+
+    z-index: 9999 !important;
+}
+
+.logo {
+    margin: auto auto auto 80px;
+}
+
+.sign-in {
+    margin: auto 16px auto auto;
+
+    padding: 13px 19px;
+    
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    border-radius: 2px;
+
+    box-sizing: content-box;
+    width: 38px;
+    height: 12px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 24px;
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #1D1D1D;
+}
+
+.sign-in:hover {
+    background: #e4e0e0;
+}
+
+.basket {
+    margin: auto 80px auto 0px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 40px;
+    height: 72px;
+}
+
+.basket:hover {
+    background: #e4e0e0;
+}
+
+@media screen and (max-width: 767px) {
+    .logo {
+        margin: auto auto auto 8px;
+    }
+
+    .basket {
+        margin: auto 8px auto 0px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .basket {
+        display: none;
+    }
+}
+
+.search {
+    margin-top: 104px;
+    width: 100%;
+    height: 48px;
+
+    border: 0;
+    border-bottom: 1px solid #757575;
+}
+
+.restaurants_in_Moscow {
+    margin: 56px auto 16px;
+    width: 100%;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 34px;
+
+    color: #1D1D1D;
+}
+
+.card {
+    margin-bottom: 16px;
+}
+
+.card:hover {
+    background: #e4e0e0;
+    mix-blend-mode: normal;
+    opacity: 0.75;
+}
+
+.card > .photo {
+    margin-bottom: 16px;
+
+    width: 100%;
+    height: auto;
+}
+
+.card > .name {
+    margin-bottom: 4px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #1D1D1D;
+}
+
+.card > .range {
+    margin-bottom: 4px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+
+    color: #626262;
+}
+
+.card > .time {
+    margin-bottom: 20px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 21px;
+
+    color: #1D1D1D;
+}
