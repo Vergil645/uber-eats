@@ -12,14 +12,7 @@
     width: 100%;
     height: 72px;
 
-    display: flex;
-    align-items: center;
-
     z-index: 9999 !important;
-}
-
-.logo {
-    margin: auto auto auto 80px;
 }
 
 .sign-in {
@@ -54,8 +47,6 @@
 }
 
 .basket {
-    margin: auto 80px auto 0px;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -68,20 +59,29 @@
     background: #e4e0e0;
 }
 
-@media screen and (max-width: 767px) {
-    .logo {
-        margin: auto auto auto 8px;
-    }
-
-    .basket {
-        margin: auto 8px auto 0px;
-    }
-}
-
 @media screen and (max-width: 320px) {
+    .sign-in {
+        margin: auto 0px auto auto;
+    }
+
     .basket {
         display: none;
     }
+}
+
+.btn-up {
+    position: fixed;
+    right: 16px;
+    bottom: 24px;
+
+    width: 80px;
+    height: 80px;
+
+    background-color: #59BD5A;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .search {
@@ -90,7 +90,11 @@
     height: 48px;
 
     border: 0;
-    border-bottom: 1px solid #757575;
+}
+
+.line-dark {
+    height: 1px;
+    background-color: #757575;
 }
 
 .restaurants_in_Moscow {
@@ -157,4 +161,29 @@
     line-height: 21px;
 
     color: #1D1D1D;
+}
+
+.footer {
+    background-color: #000000;
+    margin-top: 54px;
+    padding: 56px 0px 40px;
+
+    width: 100%;
+}
+
+.line-light {
+    background-color: #979797;
+    height: 1px;
+}
+
+.privacy {
+    margin-top: 40px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 13px;
+
+    color: #FFFFFF;
 }
